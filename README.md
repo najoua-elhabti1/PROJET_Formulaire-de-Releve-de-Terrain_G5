@@ -160,9 +160,38 @@
 
 - Importer le projet dans Android Studio.
 - Synchroniser les fichiers Gradle.
-3. **Exécuter l'application** :
 
-Construire et déployer sur un émulateur ou un appareil physique.
+## Instructions pour lancer l'application
+
+Pour faire fonctionner l'application, suivez les étapes ci-dessous :
+
+### 1. Configuration de Gradle
+
+Dans le fichier `gradle.build`, assurez-vous que toutes les dépendances nécessaires sont configurées. Si vous travaillez sur l'application et n'avez pas besoin de générer la Javadoc, laissez cette ligne **commentée** :
+
+```gradle
+//    implementation fileTree(dir: 'C:\\Users\\Pro\\AppData\\Local\\Android\\Sdk\\platforms\\android-35', include: ['*.aar', '*.jar'], exclude: [])
+```
+
+Cela garantit que l'application peut être exécutée sans inclure les fichiers spécifiques du SDK Android pour la génération de Javadoc.
+
+### 2. Génération de la Javadoc
+
+Lorsque vous avez besoin de générer la Javadoc pour le projet, vous devez **décommenter** la ligne suivante dans le fichier `gradle.build` :
+
+```gradle
+implementation fileTree(dir: 'C:\\Users\\Pro\\AppData\\Local\\Android\\Sdk\\platforms\\android-35', include: ['*.aar', '*.jar'], exclude: [])
+```
+
+Cela inclura les fichiers nécessaires à la compilation et à la génération de la documentation.
+
+### 3. Notes supplémentaires
+
+- Assurez-vous que le chemin spécifié (`C:\\Users\\Pro\\AppData\\Local\\Android\\Sdk\\platforms\\android-35`) est valide sur votre système.
+- Si le chemin diffère, modifiez-le en conséquence pour pointer vers l'emplacement correct du SDK Android.
+
+---
+
 
 ## Améliorations futures
 1. **Export des données** :
