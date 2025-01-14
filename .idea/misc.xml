@@ -1,7 +1,7 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="JavadocGenerationManager">
-    <option name="OUTPUT_DIRECTORY" value="$USER_HOME$/Desktop/doc" />
+    <option name="OUTPUT_DIRECTORY" value="$USER_HOME$/Desktop/doc2" />
     <option name="OPTION_SCOPE" value="private" />
     <option name="OTHER_OPTIONS" value="-sourcepath C:\Users\Pro\AppData\Local\Android\Sdk\platforms\android-35\android.jar" />
   </component>

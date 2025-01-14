@@ -224,6 +224,39 @@ public class MainActivity extends AppCompatActivity {
         String terrainType = spinnerTerrainType.getSelectedItem().toString();
 
         String condition = determineCondition();
+        // Validation des champs obligatoires
+        if (siteName.isEmpty()) {
+            editTextSiteName.setError("Le nom du site est obligatoire");
+            editTextSiteName.requestFocus();
+            return;
+        }
+
+        if (date.isEmpty()) {
+            editTextDate.setError("La date du relevé est obligatoire");
+            editTextDate.requestFocus();
+            return;
+        }
+
+        if (description.isEmpty()) {
+            editTextDescription.setError("La description est obligatoire");
+            editTextDescription.requestFocus();
+            return;
+        }
+        if (observations.isEmpty()) {
+            editTextDescription.setError("Les observations sont obligatoires");
+            editTextDescription.requestFocus();
+            return;
+        }
+        if (terrainType.isEmpty()) {
+            editTextDescription.setError("Le type du terrain obligatoire");
+            editTextDescription.requestFocus();
+            return;
+        }
+        if (determineCondition().isEmpty()) {
+            editTextDescription.setError("L'etat des l'infrastructures obligatoire");
+            editTextDescription.requestFocus();
+            return;
+        }
         long id = databaseHelper.insertEntry(siteName, date, coordinates, description, observations, terrainType, condition);
         if (id != -1) {
             Toast.makeText(this, "Entrée enregistrée avec succès!", Toast.LENGTH_SHORT).show();
