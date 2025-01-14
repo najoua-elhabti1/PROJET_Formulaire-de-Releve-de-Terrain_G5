@@ -1,0 +1,13 @@
+<resources>
+    <!-- Définition du nom de l'application -->
+    <string name="app_name">ReleveTerrain</string>
+
+    <!-- Définition d'un tableau de chaînes de caractères représentant les types de terrains -->
+    <string-array name="terrain_types">
+        <item>Herbe</item>
+        <item>Sable</item>
+        <item>Roche</item>
+        <item>Boueux</item>
+        <item>Autre</item>
+    </string-array>
+</resources>

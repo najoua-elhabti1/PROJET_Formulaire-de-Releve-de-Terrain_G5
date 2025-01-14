@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- La balise ScrollView permet de rendre le contenu défilable, utile si la liste ou d'autres éléments dépassent l'écran -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="16dp">
+    <!-- Le LinearLayout contient les éléments dans une orientation verticale -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Titre de l'écran affiché en haut -->
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Liste de Relevé de Terrain"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:paddingBottom="16dp" />
+
+    <!-- Liste des relevés -->
+    <ListView
+    android:id="@+id/listViewEntries"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+    </LinearLayout>
+    </ScrollView>

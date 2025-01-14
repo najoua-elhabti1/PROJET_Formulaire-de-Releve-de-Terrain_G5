@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Conteneur principal : LinearLayout disposant les éléments de manière verticale -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="#F9F9F9"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    android:backgroundTint="#FFFFFF">
+
+    <!-- Section : Nom du site -->
+    <!-- Affiche le label et la valeur associée pour le nom du site -->
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Nom du site"
+    android:textStyle="bold"
+    android:paddingBottom="4dp"
+    android:textColor="#616161"
+    android:textSize="14sp" />
+
+    <TextView
+    android:id="@+id/editTextSiteName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Nom du site"
+    android:padding="8dp"
+    android:background="#EFEFEF"
+    android:layout_marginBottom="12dp"
+    android:textColor="#424242"
+    android:textSize="16sp" />
+
+    <!-- Section : Date -->
+    <!-- Affiche le label et la date correspondante -->
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Date"
+    android:textStyle="bold"
+    android:paddingBottom="4dp"
+    android:textColor="#616161"
+    android:textSize="14sp" />
+
+    <TextView
+    android:id="@+id/editTextDate"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Date"
+    android:padding="8dp"
+    android:background="#EFEFEF"
+    android:layout_marginBottom="12dp"
+    android:textColor="#424242"
+    android:textSize="16sp" />
+
+    <!-- Section : Coordonnées GPS -->
+    <!-- Affiche les coordonnées GPS avec leur label -->
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Coordonnées GPS"
+    android:textStyle="bold"
+    android:paddingBottom="4dp"
+    android:textColor="#616161"
+    android:textSize="14sp" />
+
+    <TextView
+    android:id="@+id/textViewCoordinates"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Coordonnées GPS"
+    android:padding="8dp"
+    android:background="#EFEFEF"
+    android:layout_marginBottom="12dp"
+    android:textColor="#424242"
+    android:textSize="16sp" />
+
+    <!-- Section : Description -->
+    <!-- Permet de fournir une description pour le site -->
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Description"
+    android:textStyle="bold"
+    android:paddingBottom="4dp"
+    android:textColor="#616161"
+    android:textSize="14sp" />
+
+    <TextView
+    android:id="@+id/editTextDescription"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Description"
+    android:padding="8dp"
+    android:background="#EFEFEF"
+    android:layout_marginBottom="12dp"
+    android:textColor="#424242"
+    android:textSize="16sp" />
+
+    <!-- Section : Type de terrain -->
+    <!-- Définit le type de terrain à travers un label et une valeur -->
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Type de terrain"
+    android:textStyle="bold"
+    android:paddingBottom="4dp"
+    android:textColor="#616161"
+    android:textSize="14sp" />
+
+    <TextView
+    android:id="@+id/spinnerTerrainType"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Type de terrain"
+    android:padding="8dp"
+    android:background="#EFEFEF"
+    android:layout_marginBottom="12dp"
+    android:textColor="#424242"
+    android:textSize="16sp" />
+
+    <!-- Section : Observations -->
+    <!-- Fournit des informations ou commentaires supplémentaires -->
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Observations"
+    android:textStyle="bold"
+    android:paddingBottom="4dp"
+    android:textColor="#616161"
+    android:textSize="14sp" />
+
+    <TextView
+    android:id="@+id/editTextObservations"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Observations"
+    android:padding="8dp"
+    android:background="#EFEFEF"
+    android:layout_marginBottom="12dp"
+    android:textColor="#424242"
+    android:textSize="16sp" />
+
+    <!-- Section : État des infrastructures -->
+    <!-- Indique l'état ou la condition des infrastructures via un label -->
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="État des infrastructures"
+    android:textStyle="bold"
+    android:paddingBottom="4dp"
+    android:textColor="#616161"
+    android:textSize="14sp" />
+
+    <TextView
+    android:id="@+id/checkBoxCondition"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="#EFEFEF"
+    android:layout_marginBottom="12dp"
+    android:textColor="#424242"
+    android:textSize="16sp" />
+</LinearLayout>
